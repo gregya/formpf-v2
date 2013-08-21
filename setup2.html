@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form PF</title>
+<script src="kendo/js/jquery.min.js"></script>
+<script src="kendo/js/kendo.web.min.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.common.min.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.default.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="left-menu"> 
+	<div id="regulatory-icon" class="left-menu-items">
+	  <img src="images/regulatory-icon.png" />
+    </div>
+    <div id="invservices-icon" class="left-menu-items">
+	  <img src="images/invservices-icon.png" />
+    </div>
+	<div id="dashboard-icon" class="left-menu-items">
+	  <img src="images/dashboard-icon.png" />
+    </div>
+  <div id="logo-vert" class="left-menu-items"> 
+  <img src="images/SEI-logo-vert.png" />
+  </div>
+</div>
+
+<div id="content-holder"> 
+  <div id="formPF-header">Form PF New Filing Initiation</div>
+  <div id="formPF-sub-header">date</div>
+  <div id="formPF-setup-body"> 
+<div class="setup-block">  
+  	<h1>Hedge Funds</h1>
+    
+    <table width="100%" border="0" class="setup-grid">
+  <tr>
+    <th scope="col">Fund Name</th>
+    <th scope="col">SEC 801#</th>
+    <th scope="col">DATE RAUM</th>
+    <th scope="col">PREVIOUS RAUM</th>
+  </tr>
+  <tr>
+    <td><input name="" type="checkbox" value=""> Fund One (prefill)</td>
+    <td>999999 (prefill)</td>
+    <td><input name="FirmRAUM" type="text" class="k-textbox" /></td>
+    <td>(prefill)</td>
+  </tr>
+  <tr>
+    <td><input name="" type="checkbox" value=""> Fund Two</td>
+    <td>11111 (prefill)</td>
+    <td><input name="FirmRAUM" type="text" class="k-textbox" /></td>
+    <td>(prefill)</td>
+  </tr>
+</table>
+</div>
+<div class="setup-block">
+		<h1>Liquidity Funds</h1>
+    
+    <table width="100%" border="0" class="setup-grid">
+  <tr>
+    <th scope="col">Fund Name</th>
+    <th scope="col">SEC 801#</th>
+    <th scope="col">DATE RAUM</th>
+    <th scope="col">PREVIOUS RAUM</th>
+  </tr>
+  <tr>
+    <td><input name="" type="checkbox" value=""> Fund One (prefill)</td>
+    <td>999999 (prefill)</td>
+    <td><input name="FirmRAUM" type="text" class="k-textbox" /></td>
+    <td>(prefill)</td>
+  </tr>
+  <tr>
+    <td><input name="" type="checkbox" value=""> Fund Two</td>
+    <td>11111 (prefill)</td>
+    <td><input name="FirmRAUM" type="text" class="k-textbox" /></td>
+    <td>(prefill)</td>
+  </tr>
+</table>
+</div>
+
+<div class="setup-sumbit setup-block"><span id="filing-setup-next" class="PF-web-button"><a href="dashboard.html">Complete Form</a></span></div>
+ 
+</div></div>
+<script>
+$(function() {
+$(".setup-grid").kendoGrid();
+
+windowWidth = $(window).width();
+
+$("#content-holder").css("width" , windowWidth);
+
+
+$("#FilingDate").kendoDatePicker();
+
+
+});
+
+
+</script>
+</body>
+</html>

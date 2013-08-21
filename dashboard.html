@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form PF</title>
+<script src="kendo/js/jquery.min.js"></script>
+<script src="kendo/js/kendo.web.min.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.common.min.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.default.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="left-menu"> 
+	<div id="regulatory-icon" class="left-menu-items">
+	  <img src="images/regulatory-icon.png" />
+    </div>
+    <div id="invservices-icon" class="left-menu-items">
+	  <img src="images/invservices-icon.png" />
+    </div>
+	<div id="dashboard-icon" class="left-menu-items">
+	  <img src="images/dashboard-icon.png" />
+    </div>
+  <div id="logo-vert" class="left-menu-items"> 
+  <img src="images/SEI-logo-vert.png" />
+  </div>
+</div>
+<div id="global-select-arrow"></div>
+<div id="content-holder"> 
+  <div id="formPF-header">World Wide Capital</div>
+  
+  <div id="formPF-dash-body"> 
+        
+    <div id="grid-holder">
+    
+     <h1>Form PF Filings</h1>
+     <div id="new-filing-holder"><span class="PF-web-button" id="new-filing-button"><a href="setup.html">+ New Filing</a></span></div>
+     
+           	   <table border="0" id="grid">
+              <tr>
+                <th scope="col">Filing Name</th>
+                <th scope="col">Filing Type</th>
+                <th scope="col">Number of Funds</th>
+                <th scope="col">Days Remaining</th>
+                <th scope="col">File Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+              <tr>
+                <td><a href="filing.html">1Q 2013</a></td>
+                <td>Hedge</td>
+                <td>6</td>
+                <td>40</td>
+                <td>2012</td>
+                <td>In Progress</td>
+                <td>edit, review, export</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">4Q 2012</a></td>
+                <td>Liquidity</td>
+                <td>3</td>
+                <td>100</td>
+                <td>2013 4Q</td>
+                <td>In Progress</td>
+                <td>edit, review, export</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">3Q 2012</a></td>
+                <td>Hedge</td>
+                <td>13</td>
+                <td>-</td>
+                <td>2012 Yr</td>
+                <td>Filed</td>
+                <td>review</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">2Q 2012</a></td>
+                <td>Hedge</td>
+                <td>11</td>
+                <td>-</td>
+                <td>Yearly</td>
+                <td>Filed</td>
+                <td>review</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">2Q 2011</a></td>
+                <td>Liquidity</td>
+                <td>12</td>
+                <td>-</td>
+                <td>Yearly</td>
+                <td>Filed</td>
+                <td>review</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">2Q 2010</a></td>
+                <td>Other</td>
+                <td>1</td>
+                <td>-</td>
+                <td>2013 4Q</td>
+                <td>Filed</td>
+                <td>review</td>
+              </tr>
+              <tr>
+                <td><a href="filing.html">2Q 2009</a></td>
+                <td>Other</td>
+                <td>1</td>
+                <td>-</td>
+                <td>Yearly</td>
+                <td>Filed</td>
+                <td>review</td>
+              </tr>
+           </table>
+            
+           </div>
+  </div>
+</div>
+
+
+
+<script>
+$(function() {
+$("#grid").kendoGrid();
+
+windowWidth = $(document).width();
+//windowHeight = $(window).height();
+
+$("#content-holder").css("width" , windowWidth - 60);
+//$("#content-holder").css("height" , windowWidth - 60);
+
+
+
+});
+
+
+</script>
+</body>
+</html>

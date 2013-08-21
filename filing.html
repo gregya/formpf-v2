@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form PF</title>
+<script src="kendo/js/jquery.min.js"></script>
+<script src="kendo/js/kendo.web.min.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.common.min.css" rel="stylesheet" type="text/css">
+<link href="kendo/styles/kendo.default.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="left-menu"> 
+	<div id="regulatory-icon" class="left-menu-items">
+	  <a href="dashboard.html"><img src="images/regulatory-icon.png" /></a>
+    </div>
+    <div id="invservices-icon" class="left-menu-items">
+	  <img src="images/invservices-icon.png" />
+    </div>
+	<div id="dashboard-icon" class="left-menu-items">
+	  <img src="images/dashboard-icon.png" />
+    </div>
+  <div id="logo-vert" class="left-menu-items"> 
+  <img src="images/SEI-logo-vert.png" />
+  </div>
+</div>
+	
+
+<div> 
+ <div id="filing-tabs-holder">
+ <div id="filing-fund-name">WWC Fund One</div>
+ 	<div id="filing-tab-group">
+    	<div class="section-tab-button tab-selected" id="tab1-demo"> 1a: You and Related Persons</div>
+        <div class="section-tab-button" id="tab2-demo"> 1b: Private Funds You Advise</div>
+        <div class="section-tab-button">1c: Individual Hedge Funds</div>
+        <div class="section-tab-button">2a: Aggregate Hedge Funds</div>
+        <div class="section-tab-button">2b: Qualifying Hedge Funds</div>
+    </div>
+ </div>
+ 
+  <div id="filing-menu-holder">
+  
+  	<div id="formPF-filing-name">September 30, 2012 Form PF Filing</div>
+    <div class="menu-fund-type">Company Information</div>
+    <hr />
+    <div class="menu-fund-type">Aggregate Information</div>
+    <hr />
+    <div class="menu-fund-type">Hedge Funds</div>
+    <div class="menu-fund-name menu-selected">WWC Fund One </div><div id="global-select-arrow"></div><hr />
+    <div class="menu-fund-name">WWC Fund Two</div><hr />
+    <div class="menu-fund-name">WWC Fund Three</div><hr />
+    
+  
+  </div><!-- close filing-menu-holder-->
+  
+  <div id="filing-sections-holder">
+  
+
+<!-- open section 1a-->
+ <div style="padding:24px;"   
+ <div id="section1a-demo">   
+    
+<h1>Section 1a: Information about you and your related persons</h1>
+<div>
+  <h2>Item A. Information about you</h2>
+  <hr />
+  <div class="q-block">
+    <table width="90%">
+      <tr>
+        <td width="2%" valign="top">1. </td>
+        <td width="3%" valign="top">(a) </td>
+        <td width="95%"><p>Provide your name and the other identifying information requested below.</p>
+        <p>(This should be your full legal name. If you are a sole proprietor, this will be your last, first, and middle names. If you are a SID, enter the full legal name of your bank. Please use the same name that you use in your Form ADV.)</p></td>
+      </tr>
+    </table>
+    <table width="90%" border="0">
+      <tr>
+    <th scope="col">&nbsp;</th>
+    <th align="center" valign="middle" scope="col">Legal name </th>
+    <th align="center" valign="middle" scope="col">SEC 801-Number </th>
+    <th align="center" valign="middle" scope="col">NFA ID Number, if any  	</th>
+    <th align="center" valign="middle" scope="col">Large trader ID, if any  	</th>
+    <th align="center" valign="middle" scope="col">Large trader ID suffix, if any  	</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center" valign="middle"><label for="textfield"></label>
+      <input type="text" name="LegalName" id="LegalName"></td>
+    <td align="center" valign="middle"><label for="textfield"></label>
+      <input type="text" name="SECNumber" id="SECNumber"></td>
+    <td align="center" valign="middle"><label for="textfield"></label>
+      <input type="text" name="NFANumber" id="NFANumber"></td>
+    <td align="center" valign="middle"><label for="textfield"></label>
+      <input type="text" name="LargeTraderID" id="LargeTraderID"></td>
+    <td align="center" valign="middle"><label for="textfield"></label>
+      <input type="text" name="LargeTraderIDSuffix" id="LargeTraderIDSuffix"></td>
+  </tr>
+</table>
+</div>
+</div>
+  <div class="q-block">
+  <table width="92%" border="0">
+  <tr>
+  	<td width="2%"> </td>
+    <td width="3%">(b)</td>
+    <td width="95%">Provide the following information for each of the related persons, if any, with respect to which you are reporting information on this Form PF:</td>
+  </tr>
+</table>
+  </div>
+  <table width="90%" border="0">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Legal name </th>
+    <th scope="col">SEC 801-Number </th>
+    <th scope="col">NFA ID Number, if any  	</th>
+    <th scope="col">Large trader ID, if any  	</th>
+    <th scope="col">Large trader ID suffix, if any  	</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center"><label for="textfield"></label>
+      <input type="text" name="IndividualName" id="IndividualName"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="SECNumber" type="text" id="SECNumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="NFANumber" type="text" id="NFANumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderID" type="text" id="LargeTraderID"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderIDSuffix" type="text" id="LargeTraderIDSuffix"></td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+    <td align="center"><label for="textfield">
+      <input type="text" name="IndividualName" id="IndividualName">
+    </label></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="SECNumber" type="text" id="SECNumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="NFANumber" type="text" id="NFANumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderID" type="text" id="LargeTraderID"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderIDSuffix" type="text" id="LargeTraderIDSuffix"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center"><label for="textfield"></label>
+      <input type="text" name="IndividualName" id="IndividualName"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="SECNumber" type="text" id="SECNumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="NFANumber" type="text" id="NFANumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderID" type="text" id="LargeTraderID"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderIDSuffix" type="text" id="LargeTraderIDSuffix"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center"><label for="textfield"></label>
+      <input type="text" name="IndividualName" id="IndividualName"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="SECNumber" type="text" id="SECNumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="NFANumber" type="text" id="NFANumber"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderID" type="text" id="LargeTraderID"></td>
+    <td align="center"><label for="textfield"></label>
+      <input name="LargeTraderIDSuffix" type="text" id="LargeTraderIDSuffix"></td>
+  </tr>
+</table>
+  <div></div>
+  
+    <div class="q-block">
+   	  <table width="90%" border="0">
+  <tr>
+    <td colspan="4">&nbsp;</td>
+    </tr>
+  <tr>
+    <td width="3%">2. </td>
+    <td colspan="3"><p>Signatures of sole proprietor or authorized representative (see Instruction 11 to Form PF). </p>
+      <p>&nbsp;</p>
+      <p>Signature on behalf of related persons:
+        I, the undersigned, sign this Form PF on behalf of, and with the authority of, the related person(s) identified below.
+        To the extent that Section 1 or 2 of this Form PF is filed in accordance with a regulatory obligation imposed by CEA rule 4.27, each related person identified below and I all accept that any false or misleading statement of a material fact therein or material omission therefrom shall constitute a violation of section 6(c)(2) of the CEA. </p></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="2%">&nbsp;</td>
+    <td colspan="2">Name of each related person on behalf of which this individual is signing: 
+      <label for="textfield"></label></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="60%">Name of individual:</td>
+    <td width="35%"><label for="textfield"></label>
+      <input type="text" name="IndividualName" id="IndividualName"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Signature: </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="Signature" id="Signature"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Title: </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="Title" id="Title"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Email address: </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="EmailAddress" id="EmailAddress"></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td>&nbsp;</td>
+    <td>Telephone contact number (include area code and, if outside the United States, country code): </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="TelephoneNumber" id="TelephoneNumber"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Date: </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="SignatureDate" id="SignatureDate"></td>
+  </tr>
+</table>
+     	
+    </div>
+   </div> 
+<!-- close section 1a -->   
+
+
+<!-- open section 1b -->
+
+
+<div class="PFsection" id="section1b-demo">
+
+<h1>Section 1b: Information about the private funds you advise</h1>
+<hr />
+
+<div>Subject to Instruction 5, you must complete a separate Section 1b for each private fund that you advise.</div>
+
+<h2>Item A. Reporting fund identifying information</h2>
+<hr />
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="3%">5.</td>
+    <td width="4%">(a)</td>
+    <td width="44%"> Name of the reporting fund </td>
+    <td width="49%"><label for="textfield"></label>
+      <input name="FundName" type="text" id="FundName"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(b)</td>
+    <td> Private fund identification number of the reporting fund </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="FundID" id="FundID"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(c)</td>
+    <td> NFA identification number of the reporting fund, if applicable </td>
+    <td><label for="textfield"></label>
+      <input type="text" name="NFANumber" id="NFANumber"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(d)</td>
+    <td> LEI of the reporting fund, if applicable</td>
+    <td><label for="textfield"></label>
+      <input type="text" name="LEI" id="LEI"></td>
+  </tr>
+</table>
+</div>
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="3%">6.</td>
+    <td colspan="2"><div>Check &ldquo;yes&rdquo; below if the reporting fund is the master fund of a master-feeder arrangement and you are reporting for all of the funds in the master-feeder arrangement on an aggregated basis. Otherwise, check &ldquo;no.&rdquo; 
+          <p>(See Instruction 5 for information regarding aggregation of master-feeder arrangements. If you respond &ldquo;yes,&rdquo; do not complete a separate Section 1b, 1c, 2b, 3 or 4 with respect to any of the feeder funds.) </p>
+        </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="50%"><input type="radio" name="IsMasterFund" id="IsMasterFund" value="Yes">
+      <label for="radio"></label>      <label for="checkbox">Yes</label></td>
+    <td width="47%">      <input type="radio" name="IsMasterFund" id="IsMasterFund" value="No">
+      No</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="4%">7.</td>
+    <td colspan="2">(a) Check “yes” below if the reporting fund is the largest fund in a parallel fund structure and you are reporting for all of the funds in the structure on an aggregated basis. Otherwise, check “no.”
+(See Instruction 5 for information regarding aggregation of parallel funds. If you respond “yes,” do not complete a separate Section 1b, 1c, 2b, 3 or 4 with respect to any of the other parallel funds in the structure.)</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="49%"><input type="radio" name="IsParallelFundsAggregated" id="IsParallelFundsAggregated" value="Yes">      <label for="checkbox">Yes</label></td>
+    <td width="47%"><input type="radio" name="IsParallelFundsAggregated" id="IsParallelFundsAggregated" value="Yes">      
+      No</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="4%">&nbsp;</td>
+    <td colspan="2">If you responded “yes” to Question 7(a), complete (b) through (e) below for each other parallel
+fund in the parallel fund structure.</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="47%">(b) Name of the parallel fund </td>
+    <td width="49%"><label for="textfield70"></label>
+      <input name="FundName" type="text" id="FundName"></td>
+  </tr>
+   <tr>
+    <td>&nbsp;</td>
+    <td width="47%">(c) Private fund identification number of the parallel fund </td>
+    <td width="49%"><input type="text" name="ParallelFundID" id="ParallelFundID"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="47%">(d) NFA identification number of the parallel fund, if applicable </td>
+    <td width="49%"><input type="text" name="NFANumber" id="NFANumber"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="47%">(e) LEI of the parallel fund, if applicable </td>
+    <td width="49%"><input type="text" name="LEI" id="LEI"></td>
+  </tr>
+</table>
+</div>
+
+<h2>Item B. Assets, financing and investor concentration</h2>
+<hr />
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td>8. </td>
+    <td>Gross asset value of reporting fund</td>
+    <td><label for="textfield2"></label>
+      <input name="GrossAssetValue" type="text" id="GrossAssetValue" value=""></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><p>(This amount may differ from the amount you reported in response to question 11 of Form ADV Section 7.B.1. For instance, the amounts may not be the same if you are filing Form PF on a quarterly basis, if you are aggregating a master-feeder arrangement for purposes of this Form PF and you did not aggregate that master-feeder arrangement for purposes of Form ADV Section 7.B.1. or if you are aggregating parallel funds for purposes of this Form PF.) </p></td>
+    </tr>
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="3%">9. </td>
+    <td width="47%">Net asset value of reporting fund</td>
+    <td width="50%">
+      <input type="text" name="NetAssetValue" id="NetAssetValue"></td>
+  </tr>
+ 
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="3%">10. </td>
+    <td width="47%">Value of reporting fund’s investments in equity of other private funds</td>
+    <td width="50%">
+      <input type="text" name="EquityValueInOtherFunds" id="EquityValueInOtherFunds"></td>
+  </tr>
+ 
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="3%">11. </td>
+    <td width="47%">Value of all parallel managed accounts related to the reporting fund </td>
+    <td width="50%"><label for="textfield2"></label>
+      <input type="text" name="ParallelManagedAccountValue" id="ParallelManagedAccountValue"></td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td colspan="2"><p>(If any of your parallel managed accounts relates to more than one of the private funds you advise, only report the value of the account once, in connection with the largest private fund to which it relates.) </p><label for="textfield2"></label></td>
+    </tr>
+ 
+</table>
+</div>
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="4%">12.</td>
+    <td colspan="2"><div>
+      <p>Provide the following information regarding the value of the reporting fund&rsquo;s borrowings and the types of creditors. </p>
+      <p>(You are not required to respond to this question for any reporting fund with respect to which you are answering Question 43 in Section 2b. Do not net out amounts that the reporting fund loans to creditors or the value of collateral pledged to creditors.) </p>
+      <p>(The percentages borrowed from the specified types of creditors should add up to approximately 100%.) </p>
+    </div></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="74%">(a) Dollar amount of total borrowings </td>
+    <td width="22%"><label for="textfield2"></label>
+      <input type="text" name="BorrowedTotalAmount" id="BorrowedTotalAmount"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(b) Percentage borrowed from U.S. financial institutions </td>
+    <td><label for="textfield2"></label>
+      <input type="text" name="BorrowedFromUSFinancialInstitutionAmount" id="BorrowedFromUSFinancialInstitutionAmount"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(c) Percentage borrowed from non-U.S. financial institutions </td>
+    <td><label for="textfield2"></label>
+      <input type="text" name="BorrowedFromNonUSFinancialInstitutionAmount" id="BorrowedFromNonUSFinancialInstitutionAmount"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(d) Percentage borrowed from U.S. creditors that are not financial institutions </td>
+    <td><label for="textfield2"></label>
+      <input type="text" name="BorrowedFromUSNonFinancialInstitutionAmount" id="BorrowedFromUSNonFinancialInstitutionAmount"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>(e) Percentage borrowed from non-U.S. creditors that are not financial institutions </td>
+    <td><label for="textfield2"></label>
+      <input type="text" name="BorrowedFromNonUSNonFinancialInstitutionAmount" id="BorrowedFromNonUSNonFinancialInstitutionAmount"></td>
+  </tr>
+
+</table>
+</div>
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="5%">13.</td>
+    <td colspan="3">(a) Does the reporting fund have any outstanding derivatives positions?</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="30%"><input type="radio" name="HasDerivativesPositions" id="HasDerivativesPositions" value="Yes">
+      <label for="HasDerivativesPositions"></label>      <label for="checkbox3">Yes</label></td>
+    <td width="42%"><input type="radio" name="HasDerivativesPositions" id="HasDerivativesPositions2" value="No">      
+      No</td>
+    <td width="23%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2"><p>(b) If you responded &ldquo;yes&rdquo; to Question 13(a), provide the aggregate value of all derivatives positions of the reporting fund </p></td>
+    <td><input type="text" name="DerivativesPositionsValue" id="DerivativesPositionsValue"></td>
+  </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td colspan="3">(You are not required to respond to Question 13 for any reporting fund with respect to which you are answering Question 44 in Section 2b.)</td>
+    </tr>
+</table>
+</div>
+
+
+<div class="q-block">
+<table width="90%" border="1">
+  <tr>
+    <td width="5%">14</td>
+    <td width="95%" colspan="5"><div>
+      <p>Provide a summary of the reporting fund&rsquo;s assets and liabilities categorized using the hierarchy below. For assets and liabilities that you report internally and to current and prospective investors as representing fair value, or for which you are required to determine fair value in order to report the reporting fund&rsquo;s regulatory assets under management on Form ADV, categorize them into the following categories based on the valuation assumptions utilized: </p>
+      <p>Level 1 – Quoted prices (unadjusted) in active markets for identical assets or liabilities. </p>
+      <p>Level 2 – Other than quoted prices included within Level 1 that are observable for the asset or liability, either directly or indirectly. </p>
+      <p>Level 3 – Unobservable inputs, such as your assumptions or the fund&rsquo;s assumptions used to determine the fair value of the asset or liability. </p>
+      <p>For any assets and liabilities that you report internally and to current and prospective investors as representing a measurement attribute other than fair value, and for which you are not required to determine fair value in order to report the reporting fund&rsquo;s regulatory assets under management on Form ADV, separately report these assets and liabilities in the &ldquo;cost-based&rdquo; measurement column. </p>
+      <p>(If the fund&rsquo;s financial statements are prepared in accordance with U.S. generally accepted accounting principles (&ldquo;U.S. GAAP&rdquo;) or another accounting standard that requires the categorization of assets and liabilities using a fair value hierarchy similar to that established under U.S. GAAP, then respond to this question using the fair value hierarchy established under the applicable accounting standard.) </p>
+        <p>(This question requires the use of fair values and cost-based measurements, which may be different from the values contemplated by Instruction 15. You are only required to respond to this question if you are filing an annual update or a quarterly update for your fourth fiscal quarter .) </p>
+      
+    </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="4" align="center">Fair value</td>
+    <td>Cost-based</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Level 1</td>
+    <td>Level 2</td>
+    <td>Level 3</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Assets</td>
+    <td>$
+      <label for="textfield3"></label>
+      <input name="FairValueLevel1AssetsAmount" type="text" id="FairValueLevel1AssetsAmount" size="10"></td>
+    <td>$
+      <input name="FairValueLevel2AssetsAmount" type="text" id="FairValueLevel2AssetsAmount" size="10"></td>
+    <td>$
+      <input name="FairValueLevel3AssetsAmount" type="text" id="FairValueLevel3AssetsAmount" size="10"></td>
+    <td><input name="CostBasedAssetsAmount" type="text" id="CostBasedAssetsAmount" size="10"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Liabilities </td>
+    <td>$
+      <input name="FairValueLevel1LiabilitiesAmount" type="text" id="FairValueLevel1LiabilitiesAmount" size="10"></td>
+    <td>$
+      <input name="FairValueLevel2LiabilitiesAmount" type="text" id="FairValueLevel2LiabilitiesAmount" size="10"></td>
+    <td>$
+      <input name="FairValueLevel3LiabilitiesAmount" type="text" id="FairValueLevel3LiabilitiesAmount" size="10"></td>
+    <td><input name="CostBasedLiabilitiesAmount" type="text" id="CostBasedLiabilitiesAmount" size="10"></td>
+  </tr>
+</table>
+</div>
+
+
+</div>
+<!-- close section 1b -->
+
+
+</div><!-- close filings-menu-holder-->
+  
+  </div><!--keep this-->
+  
+</div>
+<script>
+$(function() {
+$("#grid").kendoGrid();
+
+windowWidth = $(window).width();
+
+$("#content-holder").css("width" , windowWidth);
+
+
+
+$("#section1b-demo").hide();
+
+$('#tab2-demo').on("click", function(event){
+	$('#section1b-demo').show();
+	$('#section1a-demo').hide();
+	$(this).addClass("tab-selected");
+	$('#tab1-demo').removeClass("tab-selected");
+	});
+
+$('#tab1-demo').on("click", function(event){
+	$('#section1a-demo').show();
+	$('#section1b-demo').hide();
+	$(this).addClass("tab-selected");
+	$('#tab2-demo').removeClass("tab-selected");
+	});
+
+
+
+});
+
+
+</script>
+</body>
+</html>

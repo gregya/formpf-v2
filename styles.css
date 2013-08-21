@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ 
+body{
+  margin:0;
+  padding:0 0 0 0;
+  background: #1a1a1a;
+ 1border-top: 2px solid #1a1a1a;
+  	font-family: "Proxima Nova Light" , Arial, Sans-Serif;
+	line-height:1.5em;
+	font-size:13px;
+	overflow:auto;
+ }
+
+h1 {
+	font-size:18px;
+	font-weight:bold;
+	margin-top:16px;
+	margin-bottom:16px;
+	}
+
+h2 {
+	font-size:13px;
+	font-weight:bold;
+	margin-top:16px;
+	margin-bottom:16px;
+	}	
+
+a {
+	text-decoration:none;
+	color:#1a1a1a;
+	}
+ 
+ #left-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	background: #222;
+	text-align:center;
+	padding-top:16px;
+ }
+ 
+#content-holder{
+	1height:100%;
+	1padding-right:16px;
+	1padding-left:120px;
+	position:absolute;
+	1min-width:1200px;
+	min-height:800px;
+	left:60px;
+	border: 4px solid #1a1a1a;
+	background: #eaeaea;
+	border-top-left-radius:12px;
+	padding: 0px 42px 32px 32px;
+	position:fixed;
+ }
+
+.left-menu-items{
+	margin: 22px 0px 22px 0px;
+	}
+	
+#global-select-arrow {
+	position: fixed;
+	width: 18px;
+	height: 18px;
+	top:44px;
+	left: 60px;
+	background-image:url(images/global-select-arrow.png);
+	background-repeat:no-repeat;
+	z-index:1000;
+}
+
+#formPF-header{
+	margin: 40px 0px 24px 0px;
+	font-size: 1.8em;
+	}
+	
+#formPF-sub-header{
+	margin: 0px 0px 0px 0px;
+	font-size: 1.4em;
+	}
+
+#formPF-dash-body {
+	margin-top: 54px;
+	}
+
+#grid-holder {
+	width:90%;
+	}
+
+.PF-web-button{
+	border: 1px solid #dadada;
+	padding: 6px 14px 6px 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	background: #f5f5f5;
+	-webkit-box-shadow: 0 6px 6px -6px #ccc;
+	-moz-box-shadow: 0 6px 6px -6px #ccc;
+	box-shadow: 0 6px 6px -6px #ccc;
+	margin: 20px 0 0 0;
+	}
+
+#new-filing-holder{
+	text-align:right;
+	margin: 12px 0 12px 0;
+	
+	}
+
+/********************************** filing.html ***************************/
+
+#filing-tabs-holder{
+	border-top:4px solid #1a1a1a;
+	position:fixed;
+	left:252px;
+	top:0px;
+	width:1020px;
+	height:78px;
+	z-index:1000;
+	background:#f5f5f5;
+	1padding: 6px 22px 0px 6px;
+	1border-bottom:1px dashed tomato;
+	}
+	
+#filing-menu-holder{
+	1border-right:1px solid seagreen;
+	border-top:4px solid #1a1a1a;
+	border-left:4px solid #1a1a1a;
+	border-top-left-radius:12px;
+	position:fixed;
+	left:60px;
+	top:0px;
+	width:192px;
+	height:800px;
+	background:#eaeaea;
+	
+	}
+	
+#filing-sections-holder{
+	1border:1px solid #bada55;
+	position:relative;
+	left:252px;
+	top:66px;
+	width:1020px;
+	height: auto;
+	1overflow:scroll;
+	background:#f5f5f5;
+	}
+	
+#formPF-filing-name{
+	font-size:1.3em;
+	margin: 36px 0 40px 16px;
+	
+	}
+	
+.menu-fund-type{
+	font-size:1.2em;
+	margin: 14px 0 14px 10px;
+	}
+
+.menu-fund-name{
+	font-size:1em;
+	margin: 8px 0 8px 30px;
+	}
+	
+.menu-selected {
+	
+	}
+
+#filing-fund-name{
+	font-size:1.5em;
+	margin: 12px 0px 2px 20px;
+	}
+	
+#filing-tab-group{
+	margin: 14px 16px 0px 12px;
+	border-bottom: 2px solid #efefef;
+	padding: 8px 6px 3px 6px;
+	width:90%;
+	}
+
+.section-tab-button{
+	display:inline;
+	padding: 6px;
+	border-top: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	border-top-right-radius:6px;
+	border-top-left-radius:6px;
+	}	
+
+.tab-selected {
+	background: white;
+	}	
+
+/****************** setup *****************/
+
+#formPF-setup-body{
+	width:800px;
+	margin: 0 0 0 36px;
+	}
+
+.setup-block{
+	margin: 22px 0 22px 0;
+	}
+
+.setup-sumbit{
+	text-align:right;
+	margin-top: 22px;
+	}
+	
+/******** section styles ************/
+	
+.PFsection {
+	padding: 16px;
+	width:90%;
+}
+
+
+.q-block {
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
+	padding-left: 16px;
+	padding-right: 6px;
+}
